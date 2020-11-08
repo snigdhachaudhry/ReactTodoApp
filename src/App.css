@@ -1,33 +1,116 @@
-.App {
+body {
+  background: plum;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+
+.input-text {
+  margin: 0;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+}
+
+.list ul li button {
+  position: absolute;
+  right: 0%;
+  background: black;
+  border: 1px solid plum;
+  color: plum !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: -2px;
+  padding: 8px;
+  border-radius: 0.4rem;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.list ul li button:hover {
+  box-shadow: 0px 0px 10px 0px plum;
+}
+
+.add-btn {
+  color: plum !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: black;
+  font-size: 15px;
+  margin-left: 20px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 0.4rem;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  box-shadow: 0px 0px 15px 0px white;
+}
+
+h3{
+  margin: 5px;
+  color: #000;
+}
+
+.app-title {
   text-align: center;
+  color: #000;
+  font-size: 70px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  /* remove default padding and margin from ul*/
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.list ul li {
+  display: block;
+  width: 100%;
+  background-color: #000;
+  line-height: 30px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #cccccc;
+  padding: 10px;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+
+.check {
+  margin-right:12px;
+  height: 17px; 
+  width: 17px; 
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .check:hover {
+  box-shadow: 0px 0px 5px 0px plum;
+} */
+
+li:hover {
+  box-shadow: 0px 0px 6px 0px black;
+}
+
+input:checked + label {
+  opacity: 0.4;
+  color: grey;
+  text-decoration-line: line-through;
+}
+
+.container {
+  color: #fff;
+  max-width: 500px;
+  margin: auto;
+}
+
+li {
+  overflow-wrap: break-word;
 }
